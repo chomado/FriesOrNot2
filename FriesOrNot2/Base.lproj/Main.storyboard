@@ -31,7 +31,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m19-Mf-UUB">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="m19-Mf-UUB">
                                         <rect key="frame" x="0.0" y="28.5" width="375" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="m19-Mf-UUB" secondAttribute="height" multiplier="15:8" id="cXA-zF-KZP"/>
@@ -62,4 +62,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
