@@ -31,7 +31,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="m19-Mf-UUB">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="m19-Mf-UUB">
                                         <rect key="frame" x="0.0" y="28.5" width="375" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="m19-Mf-UUB" secondAttribute="height" multiplier="15:8" id="cXA-zF-KZP"/>
@@ -50,14 +50,25 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Ctg-8s-pUn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Mo1-jj-w99"/>
                             <constraint firstItem="Ctg-8s-pUn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dBI-U4-PxB"/>
                             <constraint firstAttribute="trailing" secondItem="Ctg-8s-pUn" secondAttribute="trailing" id="xv3-z2-ntb"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5V5-Vb-RVR" appends="YES" id="SqC-vE-Is0"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="VgT-Ek-ctM" id="6Vy-sT-uMc"/>
+                        <outlet property="photoImageView" destination="m19-Mf-UUB" id="K4o-Rn-sYr"/>
+                        <outlet property="resultLabel" destination="6NG-vK-7dj" id="TYO-VS-DhI"/>
+                        <outlet property="selectImage" destination="5V5-Vb-RVR" id="bEW-Ip-JDh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5V5-Vb-RVR"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
