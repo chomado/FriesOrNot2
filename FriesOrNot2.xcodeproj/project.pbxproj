@@ -13,6 +13,8 @@
 		5961C9651F31756C00281E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5961C9641F31756C00281E67 /* Assets.xcassets */; };
 		5961C9681F31756C00281E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5961C9661F31756C00281E67 /* LaunchScreen.storyboard */; };
 		5961C9731F31756C00281E67 /* FriesOrNot2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961C9721F31756C00281E67 /* FriesOrNot2Tests.swift */; };
+		5961C97E1F31B3A300281E67 /* CustomVisionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961C97D1F31B3A300281E67 /* CustomVisionResult.swift */; };
+		5961C9801F31B44800281E67 /* CustomVisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961C97F1F31B44800281E67 /* CustomVisionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5961C96E1F31756C00281E67 /* FriesOrNot2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriesOrNot2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5961C9721F31756C00281E67 /* FriesOrNot2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriesOrNot2Tests.swift; sourceTree = "<group>"; };
 		5961C9741F31756C00281E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5961C97D1F31B3A300281E67 /* CustomVisionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVisionResult.swift; sourceTree = "<group>"; };
+		5961C97F1F31B44800281E67 /* CustomVisionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVisionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				5961C9641F31756C00281E67 /* Assets.xcassets */,
 				5961C9661F31756C00281E67 /* LaunchScreen.storyboard */,
 				5961C9691F31756C00281E67 /* Info.plist */,
+				5961C97D1F31B3A300281E67 /* CustomVisionResult.swift */,
+				5961C97F1F31B44800281E67 /* CustomVisionService.swift */,
 			);
 			path = FriesOrNot2;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5961C9801F31B44800281E67 /* CustomVisionService.swift in Sources */,
+				5961C97E1F31B3A300281E67 /* CustomVisionResult.swift in Sources */,
 				5961C9601F31756C00281E67 /* ViewController.swift in Sources */,
 				5961C95E1F31756C00281E67 /* AppDelegate.swift in Sources */,
 			);

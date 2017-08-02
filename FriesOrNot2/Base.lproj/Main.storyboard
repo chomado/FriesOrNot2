@@ -33,9 +33,13 @@
                                     </label>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="m19-Mf-UUB">
                                         <rect key="frame" x="0.0" y="28.5" width="375" height="200"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="m19-Mf-UUB" secondAttribute="height" multiplier="15:8" id="cXA-zF-KZP"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="jG9-T3-Kf4" appends="YES" id="Zfk-LW-Msz"/>
+                                        </connections>
                                     </imageView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-Ek-ctM">
                                         <rect key="frame" x="0.0" y="236.5" width="375" height="20"/>
@@ -56,19 +60,19 @@
                             <constraint firstItem="Ctg-8s-pUn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dBI-U4-PxB"/>
                             <constraint firstAttribute="trailing" secondItem="Ctg-8s-pUn" secondAttribute="trailing" id="xv3-z2-ntb"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="5V5-Vb-RVR" appends="YES" id="SqC-vE-Is0"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="VgT-Ek-ctM" id="6Vy-sT-uMc"/>
                         <outlet property="photoImageView" destination="m19-Mf-UUB" id="K4o-Rn-sYr"/>
                         <outlet property="resultLabel" destination="6NG-vK-7dj" id="TYO-VS-DhI"/>
-                        <outlet property="selectImage" destination="5V5-Vb-RVR" id="bEW-Ip-JDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="5V5-Vb-RVR"/>
+                <tapGestureRecognizer id="jG9-T3-Kf4">
+                    <connections>
+                        <action selector="selectImage:" destination="BYZ-38-t0r" id="FUD-7h-Mtp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>

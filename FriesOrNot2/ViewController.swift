@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
@@ -23,7 +23,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet var selectImage: UITapGestureRecognizer!
-
+    @IBAction func selectImage(_ sender: Any) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        
+        imagePickerController.delegate = self
+        
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            fatalError("Expected an image, but was provided \(info)")
+        }
+        
+        photoImageView.image = selectedImage
+        dismiss(animated: true, completion: nil)
+    }
 }
 
